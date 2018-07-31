@@ -1,0 +1,5 @@
+---- __HAL_UART_ENABLE_IT Matches (4 in 3 files) ----
+Main.c (src):  __HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
+Stm32f3xx_hal_uart.c (d:\hwp\forcemeter\소스\stm32cube_fw_f3\drivers\stm32f3xx_hal_driver\src):                __HAL_UART_ENABLE_IT() and __HAL_UART_DISABLE_IT() inside the transmit and receive processes.
+Stm32f3xx_hal_uart.c (d:\hwp\forcemeter\소스\stm32cube_fw_f3\drivers\stm32f3xx_hal_driver\src):      (+) __HAL_UART_ENABLE_IT: Enable the specified UART interrupt
+Stm32f3xx_hal_uart.h (d:\hwp\forcemeter\소스\stm32cube_fw_f3\drivers\stm32f3xx_hal_driver\inc):#define __HAL_UART_ENABLE_IT(__HANDLE__, __INTERRUPT__)   (((((uint8_t)(__INTERRUPT__)) >> 5U) == 1U)? ((__HANDLE__)->Instance->CR1 |= (1U << ((__INTERRUPT__) & UART_IT_MASK))): \
